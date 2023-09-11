@@ -1,0 +1,36 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "todo",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^26.2.0",
+    "electron-builder": "^24.6.4"
+  },
+  "homepage": "https://mipan.site",
+  "author": {
+    "name": "pendragon",
+    "email": "pendragonscode@gmail.com"
+  },
+  "build": {
+    "icon": "build/icon.ico",
+    "appId": "com.todo.app",
+    "productName": "todo",
+    "directories": {
+      "output": "dist"
+    },
+    "linux": {
+      "icon": "build/256x256.png",
+      "target": "AppImage"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "win": {
+      "target": "nsis"
+    }
+  }
+}
